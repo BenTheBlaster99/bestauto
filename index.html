@@ -79,7 +79,10 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.58 3.6a1 1 0 0 1-.25 1z"/></svg>
             Appeler le 07 83 81 23 31
           </a>
-          <a class="btn btn--ghost btn--xl" href="#services">Nos services</a>
+          <a class="btn btn--wa btn--xl" target="_blank" rel="noopener" href="https://wa.me/33783812331?text=Bonjour%2C%20j%27ai%20besoin%20d%27un%20d%C3%A9pannage.%0AMa%20position%20%3A%20%0AMon%20v%C3%A9hicule%20%3A%20">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.5 9.5 0 0 0-8.1 14.4L2.5 21.5l5.2-1.4A9.5 9.5 0 1 0 12 2zm0 2a7.5 7.5 0 1 1-3.9 13.9l-.4-.2-2.6.7.7-2.5-.3-.4A7.5 7.5 0 0 1 12 4z"/></svg>
+            WhatsApp
+          </a>
         </div>
         <ul class="hero__badges">
           <li>Toutes distances</li>
@@ -288,11 +291,15 @@
           <span class="contact__lbl">Téléphone · 24h/24, 7j/7</span>
           <span class="contact__val">07 83 81 23 31</span>
         </a>
+        <a class="contact__item contact__item--wa reveal" target="_blank" rel="noopener" href="https://wa.me/33783812331?text=Bonjour%2C%20j%27ai%20besoin%20d%27un%20d%C3%A9pannage.%0AMa%20position%20%3A%20%0AMon%20v%C3%A9hicule%20%3A%20">
+          <span class="contact__lbl">WhatsApp</span>
+          <span class="contact__val contact__val--sm">Envoyer ma position par message</span>
+        </a>
         <a class="contact__item reveal" href="mailto:Bestauto-16@hotmail.com">
           <span class="contact__lbl">E-mail</span>
           <span class="contact__val contact__val--sm">Bestauto-16@hotmail.com</span>
         </a>
-        <div class="contact__item reveal">
+        <div class="contact__item contact__item--addr reveal">
           <span class="contact__lbl">Adresse</span>
           <span class="contact__val contact__val--sm">Relais Domitia, 2 bis rue Costières<br>30129 Redessan</span>
         </div>
@@ -321,10 +328,16 @@
 </dialog>
 
 <!-- Barre d'appel mobile -->
-<a class="callbar" href="tel:+33783812331" aria-label="Appeler Best Auto Dépannage">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.58 3.6a1 1 0 0 1-.25 1z"/></svg>
-  Appeler maintenant · 24h/24
-</a>
+<div class="callbar">
+  <a class="callbar__call" href="tel:+33783812331" aria-label="Appeler Best Auto Dépannage">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.58 3.6a1 1 0 0 1-.25 1z"/></svg>
+    Appeler
+  </a>
+  <a class="callbar__wa" target="_blank" rel="noopener" href="https://wa.me/33783812331?text=Bonjour%2C%20j%27ai%20besoin%20d%27un%20d%C3%A9pannage.%0AMa%20position%20%3A%20%0AMon%20v%C3%A9hicule%20%3A%20" aria-label="Écrire sur WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.5 9.5 0 0 0-8.1 14.4L2.5 21.5l5.2-1.4A9.5 9.5 0 1 0 12 2zm0 2a7.5 7.5 0 1 1-3.9 13.9l-.4-.2-2.6.7.7-2.5-.3-.4A7.5 7.5 0 0 1 12 4z"/></svg>
+    WhatsApp
+  </a>
+</div>
 
 <script src="script.js"></script>
 </body>

@@ -5,6 +5,7 @@
   --blue-d:#1b66bd;
   --amber:#ff9a1f;
   --amber-d:#f08400;
+  --wa:#25d366;
   --ink:#0f1b2d;
   --muted:#58667b;
   --bg:#ffffff;
@@ -152,8 +153,17 @@ a.contact__item:hover{background:rgba(255,255,255,.1)}
 .modal p strong{color:var(--ink)}
 .modal__x{position:absolute;right:14px;top:10px;border:0;background:transparent;font-size:2rem;cursor:pointer;line-height:1}
 
-.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;align-items:center;justify-content:center;gap:10px;height:56px;background:var(--amber);color:#1a0f00;font-weight:800;text-decoration:none;font-size:1.05rem;box-shadow:0 -6px 24px rgba(0,0,0,.25)}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;height:56px;box-shadow:0 -6px 24px rgba(0,0,0,.25)}
+.callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:800;text-decoration:none;font-size:1.05rem}
+.callbar__call{background:var(--amber);color:#1a0f00}
+.callbar__wa{background:var(--wa);color:#06210f}
 .callbar svg{width:22px;height:22px;fill:currentColor}
+.hero__cta .btn{flex:1 1 240px;max-width:100%}
+@media (min-width:640px){.hero__cta .btn{flex:0 0 auto}}
+.btn--wa{background:var(--wa);color:#06210f;box-shadow:0 8px 24px -8px rgba(37,211,102,.6)}
+.btn--wa:hover{background:#1fbd5a;transform:translateY(-1px)}
+.contact__item--wa{background:var(--wa);border-color:var(--wa);color:#06210f}
+a.contact__item--wa:hover{background:#1fbd5a}
 
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
@@ -164,7 +174,8 @@ a.contact__item:hover{background:rgba(255,255,255,.1)}
   .step{padding:84px 24px 26px}
   .step__n{left:24px;top:24px}
   .reviews{grid-template-columns:repeat(2,1fr)}
-  .contact__grid{grid-template-columns:repeat(3,1fr)}
+  .contact__grid{grid-template-columns:repeat(2,1fr)}
+  .contact__item--main,.contact__item--addr{grid-column:1/-1}
   .band__in{flex-direction:row;align-items:center;justify-content:space-between}
   .stats{grid-template-columns:repeat(4,1fr)}
   .stats li{border-bottom:0!important;padding:22px 16px}
@@ -183,6 +194,8 @@ a.contact__item:hover{background:rgba(255,255,255,.1)}
   .hero__in{grid-template-columns:1.05fr 1fr;gap:40px}
   .cards{grid-template-columns:repeat(3,1fr)}
   .reviews{grid-template-columns:repeat(3,1fr)}
+  .contact__grid{grid-template-columns:repeat(3,1fr)}
+  .contact__item--main,.contact__item--addr{grid-column:span 2}
   .zone{grid-template-columns:1.3fr 1fr;gap:56px}
   .section{padding:96px 0}
 }
