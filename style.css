@@ -67,7 +67,8 @@ h3{font-size:1.15rem;letter-spacing:-.01em}
 .live__dot{width:9px;height:9px;border-radius:50%;background:#35e08a;box-shadow:0 0 0 0 rgba(53,224,138,.7);animation:pulse 1.8s infinite}
 @keyframes pulse{70%{box-shadow:0 0 0 10px rgba(53,224,138,0)}100%{box-shadow:0 0 0 0 rgba(53,224,138,0)}}
 .hero h1{font-size:clamp(2.6rem,9vw,4.8rem);font-weight:900;text-transform:uppercase;letter-spacing:-.03em}
-.hero h1 span{color:var(--blue)}
+.hero h1 .hero__accent{color:var(--blue)}
+.hero__kicker{display:block;font-size:clamp(.95rem,2.6vw,1.2rem);font-weight:800;letter-spacing:.08em;color:#9bc6f7;margin-bottom:12px}
 .hero__lead{margin-top:18px;font-size:1.12rem;color:#cfdcf0;max-width:34em}
 .hero__lead strong{color:#fff}
 .hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
